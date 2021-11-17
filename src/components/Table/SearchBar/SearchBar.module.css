@@ -1,0 +1,12 @@
+.searchBarWrapper {
+  position: relative;
+  display: block;
+}
+
+.tableSearchBox {
+  border: 1px solid #cccccc;
+  color: #cccccc;
+  outline: 0;
+  padding: 5px 10px;
+  border-radius: 50px;
+}

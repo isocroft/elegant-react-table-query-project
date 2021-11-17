@@ -1,0 +1,84 @@
+.tableWrapper {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  min-height: 0;
+}
+
+.tableBox {
+  overflow-y: auto;
+}
+
+.table {
+  background-color: #ffffff;
+  table-layout: fixed;
+  overflow: auto;
+  border-collapse: collapse;
+  min-height: 50%;
+  border-spacing: 0.3rem;
+  width: 100%;
+}
+
+.tableControlsWrapper {
+  display: flex;
+  width: 100%;
+  padding: 25px 5px;
+  justify-content: space-between;
+}
+
+.table thead tr {
+  color: #777777;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.table thead tr,
+.table tbody tr {
+  border: 0;
+  border-bottom: 2px solid #999999;
+}
+
+.table thead tr th,
+.table tbody tr td {
+  text-align: left;
+  padding: 35px 15px;
+}
+
+.table.centerLastColumn tbody tr:not([data-progress-holder]) td:last-child {
+  text-align: right;
+}
+
+.table tr[data-progress-holder] {
+  border: 0;
+}
+
+.table td[colspan] {
+  text-align: center;
+  padding: 12.5% 0;
+  height: 25%;
+}
+
+.table,
+.table th,
+.table td {
+  text-align: center;
+}
+
+.table th {
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.table td {
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tableKebabIcon {
+  display: inline-block;
+  padding: 4px 16px;
+  font-weight: bold;
+  font-size: 23px;
+  color: #999999;
+}

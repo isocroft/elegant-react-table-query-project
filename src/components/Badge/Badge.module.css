@@ -1,0 +1,36 @@
+.badgeWrapper {
+  background-color: transparent;
+  display: inline-block;
+  height: 19px;
+  line-height: 21px;
+  overflow: hidden;
+  border-radius: 50px;
+  border: 0 solid transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.badgeStatus {
+  display: inline-block;
+  padding: 0px 15px 0px 15px;
+}
+
+.safe {
+  background-color: #4bae4f;
+  color: #ffffff;
+}
+
+.warn {
+  background-color: #fec006;
+  color: #000000;
+}
+
+.danger {
+  background-color: #f34235;
+  color: #ffffff;
+}
+
+.info {
+  background-color: #007acc;
+  color: #ffffff;
+}

@@ -1,0 +1,74 @@
+@keyframes pagePin {
+  from {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.paginatorWrapper {
+  display: flex;
+  min-height: 0;
+  max-width: 100%;
+  justify-content: flex-end;
+}
+
+.pinWrapper {
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0;
+  z-index: 6;
+  margin: 50px 0;
+  animation: pageIn 500ms ease both 200ms;
+}
+
+.paginatorPin {
+  font-size: 100%;
+  text-decoration: none;
+  transition: background 250ms;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0 1px;
+  min-width: 6px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  padding: 2px 1px;
+  cursor: pointer;
+  color: #aaaaaa;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+.paginatorPin:focus,
+.paginatorPin:hover {
+  color: #666666;
+}
+
+.paginatorPin[disabled] {
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #888888;
+  cursor: not-allowed;
+}
+
+.inActive {
+  pointer-events: none;
+}
+
+.paginatorCarousel {
+  display: block;
+}
+
+.paginatorCarousel span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #bbbbbb;
+}
+
+.paginatorCarousel span:first-child {
+  margin-right: 25px;
+}
